@@ -1,2 +1,10 @@
-# SimpleDependencyInstaller
-A python package for Unix that makes installing modules in-script easier and more user-friendly.
+# Simple Dependency Installer (SDI)
+
+**Easily checks if a module exists on the system and if not, installs it with pip**
+
+*Import module, then call `checked_import(StringModuleName)` to prompt the user to install a module (if uninstalled)*
+
+How to install:
+
+1. Clone repository
+2. Take SDI folder and place in site-packages
