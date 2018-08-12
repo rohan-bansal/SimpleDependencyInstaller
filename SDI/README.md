@@ -1,0 +1,5 @@
+# Simple Dependency Installer (SDI)
+
+**Easily checks if a module exists on the system and if not, installs it with pip**
+
+*Import module, then call `checked_import(StringModuleName)` to prompt the user to install a module (if uninstalled)*
