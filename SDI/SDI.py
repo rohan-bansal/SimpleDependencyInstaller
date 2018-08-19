@@ -13,7 +13,10 @@ def checked_import(StringModuleName):
         (module "' + StringModuleName + '"). Would you like the program to install them?\nRestart the app after\
         installation.') == True:    
             import subprocess
-            subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--user', StringModuleName])
-            exec("import " + StringModuleName)
+            try:
+                subprocess.check_call([sys.executable, '-m', 'pip', 'install', '--user', StringModuleName])
+                exec("import " + StringModuleName)
+            except subprocess.CalledProcessError:
+                messagebox.showinfo("Error", "Module does not exist (or permission denied)")
         else:
             sys.exit()
