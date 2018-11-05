@@ -7,4 +7,4 @@
 How to install:
 
 1. Clone repository
-2. Take SDI folder and place in site-packages
+2. Place SDI folder in site-packages, or in local workspace
