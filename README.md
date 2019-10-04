@@ -8,3 +8,6 @@ How to install:
 
 1. Clone repository
 2. Place SDI folder in site-packages, or in local workspace
+
+TODO:
+1. Better installation with PyPI package, pip
